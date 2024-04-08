@@ -28,7 +28,7 @@ body{
     border-bottom: solid $color-primary-default;
 
 img {
-    width: 9%;
+    width: 15%;
     height: auto;
 }
 
@@ -57,6 +57,7 @@ img {
 }
 }
 
+//main section //Search
 .main-Container {
     width: auto;
     display: flex;
@@ -90,14 +91,19 @@ input ::placeholder{
 }
 }
 
+//Category section
 .category-Section {
     padding: 32px 80px 32px 80px;
     display: flex;
     flex-direction: column;
+    background: $color-primary;
 
 
 .meal-Cards-Container {
     display: flex;
+    flex-direction: row;
+    width: auto;
+
 }
 
 .meal-Card {
@@ -112,32 +118,24 @@ input ::placeholder{
 
 img {
     width: 150%;
+  
 
 }
 }
+
+//meal section 
+
 
 .recipe-Section {
-    background: $color-primary;
+   
     width: auto;
     height: auto;
     padding: 40px 80px 40px 80px;
     display: flex;
-    flex-direction: column;
-
-
-.recipe-Container {
-    display: flex;
-    margin: 30px;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-.recipe-meal-Container {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
-}
+
+
 }
 
 .meal-Description{
@@ -149,4 +147,9 @@ footer {
     width: auto;
     height: 100px;
     text-align: center;
+
+.img-Footer {
+    width: 10%;
+    height: auto;
+}
 }

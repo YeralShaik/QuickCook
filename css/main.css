@@ -21,7 +21,7 @@ body {
   border-bottom: solid #E22C14;
 }
 .navbar img {
-  width: 9%;
+  width: 15%;
   height: auto;
 }
 .navbar .navBar-List {
@@ -79,9 +79,12 @@ body {
   padding: 32px 80px 32px 80px;
   display: flex;
   flex-direction: column;
+  background: #f14823;
 }
 .category-Section .meal-Cards-Container {
   display: flex;
+  flex-direction: row;
+  width: auto;
 }
 .category-Section .meal-Card {
   display: flex;
@@ -96,24 +99,11 @@ body {
 }
 
 .recipe-Section {
-  background: #f14823;
   width: auto;
   height: auto;
   padding: 40px 80px 40px 80px;
   display: flex;
-  flex-direction: column;
-}
-.recipe-Section .recipe-Container {
-  display: flex;
-  margin: 30px;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-.recipe-Section .recipe-meal-Container {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .meal-Description {
@@ -125,4 +115,8 @@ footer {
   width: auto;
   height: 100px;
   text-align: center;
+}
+footer .img-Footer {
+  width: 10%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
