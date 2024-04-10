@@ -73,7 +73,7 @@ async function getCategoryMeal() {
         // Obtén el contenedor de las tarjetas de comida
         const mealCardsContainer = document.querySelector('.meal-Cards-Container');
         mealCardsContainer.style.display = 'grid'
-        mealCardsContainer.style.gridTemplateColumns= '1fr 1fr'
+        mealCardsContainer.style.gridTemplateColumns= '1fr 1fr 1fr'
         mealCardsContainer.style.flexWrap = 'wrap'
 
         // Itera sobre los datos obtenidos
@@ -88,13 +88,13 @@ async function getCategoryMeal() {
             newImg.classList.add('mealImg')
             newImg.src = category.strCategoryThumb;
             newImg.alt = category.strCategory;
-            newImg.style.width = 'auto'
-            newImg.style.height = '100%'
+           
     
             // Crea un nuevo elemento de párrafo para el texto de la categoría
             const categoryText = document.createElement('p');
+            categoryText.classList.add('categoryName-Text')
             categoryText.textContent = category.strCategory;
-            categoryText.style.fontSize = '18px'
+            categoryText.style.fontSize = '20px'
 
 
             // Agrega la imagen y el texto de la categoría a la tarjeta de comida
@@ -103,7 +103,12 @@ async function getCategoryMeal() {
    
             // Agrega la tarjeta de comida al contenedor
             mealCardsContainer.appendChild(mealCards);
-      
+           
+           
+            mealCards.addEventListener('click', function () {
+               console.log('mostrar descripcion') 
+
+    })
 
         });
     } catch(error) {
@@ -115,37 +120,4 @@ async function getCategoryMeal() {
 getCategoryMeal()
 
 
-//www.themealdb.com/api/json/v1/1/list.php?a=list
 
-
-async function getCountryList() {
-    try {
-        // Realiza una solicitud para obtener los datos de las categorías de comidas
-        const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list');
-
-        // Verifica si la solicitud fue exitosa
-        if (!response.ok) {
-            throw new Error('Error de red: ' + response.statusText);
-        }
-
-        // Extrae los datos JSON de la respuesta
-        const country = await response.json();
-        console.log(country);
-        const countryContainer = document.querySelector('country-Section')
-        
-        country.meals.forEach(area => {
-          
-            mealCard.classList.add('meal-Card');
-            const newImgCountry = document.createElement('img')
-            newImgCountry.src = area.strArea 
-        
-            countryContainer.appendChild(newImgCountry)
-        })
-
-
-    } catch(error) {
-      
-        console.log('Error:', error)
-    }
-}
-getCountryList()
