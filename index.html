@@ -9,23 +9,21 @@
 <body>
     <nav class="navbar">
         <img class="logo-Navbar" src="./asset/logo2.png" alt="logo">
-        <ul class=" navBar-List">
-            <li>Home</li>
-            <li>Mi Recipes</li>
-            <img class="user-Icon" src="./asset/🦆 icon _User Circle_.png" alt="">
-        </ul>
-      
-        
+        <div class="navbar-button">
+            <button id="login">Iniciar Sesión</button>
+            <button id="register">Registrarme</button>
+            <img class="user-Icon active" src="./asset/🦆 icon _User Circle_.png" alt="">
+        </div>
     </nav>
     
-    <main class="main-Container">
+    <main class="main-Container active ">
             <img src="https://img.freepik.com/free-photo/traditional-lasagna-with-rich-bolognese-sauce_60438-3536.jpg?t=st=1712698125~exp=1712701725~hmac=fb46a309c1e9aa8a46d285e78d5fff73af9e5e77bebf0b0e01bfdb64ccb55c50&w=826" alt="logo">
             <input text="text" placeholder="Buscador">
         
     </main>
-    <section class=" recipe-Section">
+    <section class=" latestMeal-Section  active">
         <h2>Latest Meal</h2>
-        <div class="recipe-Container">
+        <div class="recipe-Container active">
         <div class="recipe-meal-Container">
           
             <p class="meal-Text"></p>
@@ -33,7 +31,7 @@
         
     </div>
     </section>
-    <section class="category-Meal-Section">
+    <section class="category-Meal-Section active">
             <h2> What do you want to cook?</h2>
             <div class="meal-Cards-Container">               
             </div>    
@@ -41,24 +39,26 @@
     </section>
     
   
-    <article class="meal-Description active">
-        <div>
-            <h2>ENCHILADAS ROJAS ESTILO ZACATECAS</h2>
-            <p>ingredientes</p>
-            <img src="https://cdn7.kiwilimon.com/recetaimagen/40824/400x300/54835.jpg.webp" alt="">
-            <p>Instructions</p>
-            <p>Licúa el chile guajillo, el chile de árbol, el jitomate, la cebolla, el ajo y el caldo de pollo. Reserva.
-                Calienta un poco de aceite vegetal en una olla, vierte la salsa y cocina por 10 minutos. Reserva.
-                En otra olla, sofríe la carne de cerdo y sazona con un poco de sal y pimienta. Reserva.
-                Sumerge una tortilla en la salsa y dora en una sartén con aceite vegetal por alrededor de 1 minuto.
-                
-                Pasa por una toalla de papel para retirar el exceso de aceite. Reserva.
-                Rellena la tortilla con la carne deshebrada y coloca en un plato extendido. Decora las enchiladas zacatecanas con lechuga, crema y queso.</p>
+    <article class="meal-Description-Section  ">
+        <div class="meal-Description active ">
+            <button class="active">back</button>
         </div>
-
+     
     </article>
 
-    
+    <aside class="aside-Section active">
+        <div class="aside-Container">
+            <h2>Registrarme</h2>
+            <p>Regístrate con tu Email</p>
+            <div>
+                <input type="text" placeholder="Email">
+                <input type="contraseña" placeholder="********">
+                <button>Registrarme</button>
+            </div>     
+        </div>
+    </aside>
+       
+
         
     </div>
     </section>
@@ -67,7 +67,7 @@
         <img  class="img-Footer" src="./asset/logo2.png" alt="">
         <p>© 2024 </p>
     </footer>
-
+    <script src="./src//navigation.js"></script>
     <script src="./src//index.js"></script>
 </body>
 </html>
