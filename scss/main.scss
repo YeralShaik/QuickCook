@@ -22,7 +22,7 @@ body{
 }
 
 .navbar { 
-    background: whitesmoke;
+    background: $color-50;
     color: $color-500;
   
     width: auto;
@@ -59,27 +59,18 @@ body{
  cursor: pointer;
 }
 
-#login {
-    background: $color-100;
-    color: $color-600;
-    border: none;
-    box-shadow: 2px 2px 2px $color-900;
-}
-#register {
+.login {
     background: $color-500;
     color: $color-50;
     border: none;
     box-shadow: 2px 2px 2px $color-900;
 }
 
-#login:hover {
+.login:hover {
     color: $color-50;
-    background: $color-600;   
+    background: $color-800;  
 }
-#register:hover {
-    color: $color-50;
-    background: $color-800;   
-}
+
 .user-Icon {
     width: 12%;
     height: auto;
@@ -134,7 +125,7 @@ input ::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fef3ee94;
+    background: $color-100;
 
 h2 {
     font-size: 40px;
@@ -212,7 +203,9 @@ h2 {
 
 .category-Meal-Section {
     width: auto;
-    padding: 40px 80px 40px 80px;
+    padding: 80px 80px 80px 80px;
+
+    
 
 .meal-card {
     display: flex;
@@ -240,8 +233,9 @@ h2 {
 }
 
 .meal-Description-Section {
-    padding: 40px 80px 40px 80px;
+    padding: 80px 80px 80px 80px;
     width: auto;
+    background: $color-100;
     
 
 .meal-Description {
@@ -253,7 +247,7 @@ h2 {
         align-items: center;
 }
 .meal-Description img {
-    width: 50%;
+    width: 24%;
     border-radius: 10px;
 }
 
@@ -268,16 +262,89 @@ h2 {
     padding: 24px 0 24px 0;
     font-size: 18px;
 }
+
+
+.button-back {
+    padding: 12px;
+    font-size: 16px;
+    background: $color-500;
+    color: $color-50;
+    border-radius: 10px;
+
+}
 }
 
 .aside-Section {
-    width: auto;
-    height: 500px;
-    padding: 40px 80px 40px 80px;
+    width: 250px;
+    height: auto;
+    padding: 40px 40px 40px 40px;
+    background: $color-50;
+    position: fixed;
+    top: 120px;
+    right: 100px;
+    border-radius: 16px;
+.closeAsideButton{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    font-size: 24px;
+    color: $color-800;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-Container{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    }
+.login-Title {
+    margin: 10px;
 }
+p {
+    margin: 10px;
+}
+input {
+    padding: 10px;
+    width: 200px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.login-Button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    background: $color-500;
+    color: $color-50;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.create-Account-Button {
+    margin: 0;
+    padding: 10px;
+    color: $color-500;
+    font-size: 14px;
+    text-decoration-line: underline;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.login-Button:hover {
+    color: $color-50;
+    background: $color-900;
+}
+.create-Account-Button:hover {
+    color: $color-800;
+}
+}
+
+
+
 footer {
     background: $color-500;
     width: auto;

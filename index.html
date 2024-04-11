@@ -10,15 +10,15 @@
     <nav class="navbar">
         <img class="logo-Navbar" src="./asset/logo2.png" alt="logo">
         <div class="navbar-button">
-            <button id="login">Iniciar Sesión</button>
-            <button id="register">Registrarme</button>
+            <button class="login">Iniciar Sesión</button>
+            
             <img class="user-Icon active" src="./asset/🦆 icon _User Circle_.png" alt="">
         </div>
     </nav>
     
     <main class="main-Container active ">
             <img src="https://img.freepik.com/free-photo/traditional-lasagna-with-rich-bolognese-sauce_60438-3536.jpg?t=st=1712698125~exp=1712701725~hmac=fb46a309c1e9aa8a46d285e78d5fff73af9e5e77bebf0b0e01bfdb64ccb55c50&w=826" alt="logo">
-            <input text="text" placeholder="Buscador">
+            <input class="search" text="text" placeholder="Buscador">
         
     </main>
     <section class=" latestMeal-Section  active">
@@ -41,19 +41,20 @@
   
     <article class="meal-Description-Section  ">
         <div class="meal-Description active ">
-            <button class="active">back</button>
+            <button class=" button-back active">back >> </button>
         </div>
      
     </article>
 
-    <aside class="aside-Section active">
-        <div class="aside-Container">
-            <h2>Registrarme</h2>
-            <p>Regístrate con tu Email</p>
-            <div>
+    <aside class="aside-Section ">
+            <p class="closeAsideButton">X</p>
+            <div class="login-Container">
+                <h2 class="login-Title">Login</h2>
+                <p>Login with mail</p>
                 <input type="text" placeholder="Email">
                 <input type="contraseña" placeholder="********">
-                <button>Registrarme</button>
+                <button class="login-Button">Login</button>
+                <p class="create-Account-Button">Create Account</p>
             </div>     
         </div>
     </aside>
@@ -67,7 +68,6 @@
         <img  class="img-Footer" src="./asset/logo2.png" alt="">
         <p>© 2024 </p>
     </footer>
-    <script src="./src//navigation.js"></script>
     <script src="./src//index.js"></script>
 </body>
 </html>

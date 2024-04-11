@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background: whitesmoke;
+  background: #FEF3EE;
   color: #f14823;
   width: auto;
   height: 100px;
@@ -42,23 +42,13 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-.navbar #login {
-  background: #FDE4D7;
-  color: #E22C14;
-  border: none;
-  box-shadow: 2px 2px 2px #781816;
-}
-.navbar #register {
+.navbar .login {
   background: #f14823;
   color: #FEF3EE;
   border: none;
   box-shadow: 2px 2px 2px #781816;
 }
-.navbar #login:hover {
-  color: #FEF3EE;
-  background: #E22C14;
-}
-.navbar #register:hover {
+.navbar .login:hover {
   color: #FEF3EE;
   background: #951917;
 }
@@ -110,7 +100,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(254, 243, 238, 0.5803921569);
+  background: #FDE4D7;
 }
 .category-Meal-Section h2 {
   font-size: 40px;
@@ -173,7 +163,7 @@ body {
 
 .category-Meal-Section {
   width: auto;
-  padding: 40px 80px 40px 80px;
+  padding: 80px 80px 80px 80px;
 }
 .category-Meal-Section .meal-card {
   display: flex;
@@ -198,8 +188,9 @@ body {
 }
 
 .meal-Description-Section {
-  padding: 40px 80px 40px 80px;
+  padding: 80px 80px 80px 80px;
   width: auto;
+  background: #FDE4D7;
 }
 .meal-Description-Section .meal-Description {
   padding: 40px 80px 40px 80px;
@@ -210,7 +201,7 @@ body {
   align-items: center;
 }
 .meal-Description-Section .meal-Description img {
-  width: 50%;
+  width: 24%;
   border-radius: 10px;
 }
 .meal-Description-Section .meal-Description h1 {
@@ -223,13 +214,80 @@ body {
   padding: 24px 0 24px 0;
   font-size: 18px;
 }
+.meal-Description-Section .button-back {
+  padding: 12px;
+  font-size: 16px;
+  background: #f14823;
+  color: #FEF3EE;
+  border-radius: 10px;
+}
 
 .aside-Section {
-  width: auto;
-  height: 500px;
-  padding: 40px 80px 40px 80px;
+  width: 250px;
+  height: auto;
+  padding: 40px 40px 40px 40px;
+  background: #FEF3EE;
+  position: fixed;
+  top: 120px;
+  right: 100px;
+  border-radius: 16px;
+}
+.aside-Section .closeAsideButton {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 290px;
+  font-size: 24px;
+  color: #951917;
+  font-weight: bold;
+  cursor: pointer;
+}
+.aside-Section .login-Container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aside-Section .login-Title {
+  margin: 10px;
+}
+.aside-Section p {
+  margin: 10px;
+}
+.aside-Section input {
+  padding: 10px;
+  width: 200px;
+  margin: 8px;
+  border-radius: 8px;
+}
+.aside-Section .login-Button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  background: #f14823;
+  color: #FEF3EE;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.aside-Section .create-Account-Button {
+  margin: 0;
+  padding: 10px;
+  color: #f14823;
+  font-size: 14px;
+  text-decoration-line: underline;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.aside-Section .login-Button:hover {
+  color: #FEF3EE;
+  background: #781816;
+}
+.aside-Section .create-Account-Button:hover {
+  color: #951917;
 }
 
 footer {
