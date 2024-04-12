@@ -201,7 +201,7 @@ body {
   align-items: center;
 }
 .meal-Description-Section .meal-Description img {
-  width: 24%;
+  width: 30%;
   border-radius: 10px;
 }
 .meal-Description-Section .meal-Description h1 {
@@ -301,4 +301,591 @@ footer {
 footer .img-Footer {
   width: 10%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 24px 0px 24px 40px;
+    font-size: 16px;
+    border-bottom: solid 5px #f14823;
+  }
+  .navbar .logo-Navbar {
+    width: 20%;
+    height: auto;
+    padding-left: 0px;
+  }
+  .navbar .navbar-button {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 12px;
+    padding: 24px 40px 24px 40px;
+    cursor: pointer;
+  }
+  .main-Container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-Container h2 {
+    font-size: 32px;
+  }
+  .main-Container img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .main-Container input {
+    width: auto;
+  }
+  .category-Meal-Section {
+    max-width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDE4D7;
+  }
+  .category-Meal-Section h2 {
+    font-size: 40px;
+    color: #E22C14;
+    text-shadow: 3px 3px 3px #41090a;
+  }
+  .category-Meal-Section .meal-Card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-Card:hover {
+    background: #E22C14;
+    color: #FEF3EE;
+  }
+  .category-Meal-Section .mealImg {
+    height: 55%;
+  }
+  .latestMeal-Section {
+    background: #f14823;
+    color: #FEF3EE;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-Text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+  }
+  .category-Meal-Section {
+    width: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .category-Meal-Section .category-Meal-Section h2 {
+    font-size: 24px;
+  }
+  .category-Meal-Section .meal-Cards-Container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .category-Meal-Section .meal-card {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    text-align: center;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section {
+    padding: 40px;
+    width: auto;
+    background: #FDE4D7;
+  }
+  .meal-Description-Section .meal-Description {
+    padding: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meal-Description-Section .meal-Description img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section .meal-Description h1 {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+  }
+  .meal-Description-Section .meal-Description p {
+    margin: 0px;
+    padding: 24px 0 24px 0;
+    font-size: 18px;
+  }
+  .aside-Section {
+    width: 250px;
+    height: auto;
+    padding: 40px 40px 40px 40px;
+    background: #FEF3EE;
+    position: fixed;
+    top: 120px;
+    right: 0px;
+    border-radius: 16px;
+  }
+  .aside-Section .closeAsideButton {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    font-size: 24px;
+    color: #951917;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .aside-Section .login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside-Section .login-Title {
+    margin: 10px;
+  }
+  .aside-Section p {
+    margin: 10px;
+  }
+  .aside-Section input {
+    padding: 10px;
+    width: 200px;
+    margin: 8px;
+    border-radius: 8px;
+  }
+  .img-Footer {
+    width: 20%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .navbar {
+    padding: 24px 0px 24px 40px;
+    font-size: 16px;
+    border-bottom: solid 5px #f14823;
+  }
+  .navbar .logo-Navbar {
+    width: 20%;
+    height: auto;
+    padding-left: 0px;
+  }
+  .navbar .navbar-button {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 12px;
+    padding: 24px 40px 24px 40px;
+    cursor: pointer;
+  }
+  .main-Container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-Container h2 {
+    font-size: 32px;
+  }
+  .main-Container img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .main-Container input {
+    width: auto;
+  }
+  .category-Meal-Section {
+    max-width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDE4D7;
+  }
+  .category-Meal-Section h2 {
+    font-size: 40px;
+    color: #E22C14;
+    text-shadow: 3px 3px 3px #41090a;
+  }
+  .category-Meal-Section .meal-Card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-Card:hover {
+    background: #E22C14;
+    color: #FEF3EE;
+  }
+  .category-Meal-Section .mealImg {
+    height: 55%;
+  }
+  .latestMeal-Section {
+    background: #f14823;
+    color: #FEF3EE;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-Text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+  }
+  .category-Meal-Section {
+    width: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .category-Meal-Section .category-Meal-Section h2 {
+    font-size: 24px;
+  }
+  .category-Meal-Section .meal-Cards-Container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .category-Meal-Section .meal-card {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    text-align: center;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section {
+    padding: 40px;
+    width: auto;
+    background: #FDE4D7;
+  }
+  .meal-Description-Section .meal-Description {
+    padding: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meal-Description-Section .meal-Description img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section .meal-Description h1 {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+  }
+  .meal-Description-Section .meal-Description p {
+    margin: 0px;
+    padding: 24px 0 24px 0;
+    font-size: 18px;
+  }
+  .aside-Section {
+    width: 250px;
+    height: auto;
+    padding: 40px 40px 40px 40px;
+    background: #FEF3EE;
+    position: fixed;
+    top: 120px;
+    right: 0px;
+    border-radius: 16px;
+  }
+  .aside-Section .closeAsideButton {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    font-size: 24px;
+    color: #951917;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .aside-Section .login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside-Section .login-Title {
+    margin: 10px;
+  }
+  .aside-Section p {
+    margin: 10px;
+  }
+  .aside-Section input {
+    padding: 10px;
+    width: 200px;
+    margin: 8px;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .navbar {
+    padding: 24px 0px 24px 40px;
+    font-size: 16px;
+    border-bottom: solid 5px #f14823;
+  }
+  .navbar .logo-Navbar {
+    width: 20%;
+    height: auto;
+    padding-left: 0px;
+  }
+  .navbar .navbar-button {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 12px;
+    padding: 24px 40px 24px 40px;
+    cursor: pointer;
+  }
+  .main-Container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-Container h2 {
+    font-size: 32px;
+  }
+  .main-Container img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  .main-Container input {
+    width: auto;
+  }
+  .category-Meal-Section {
+    max-width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDE4D7;
+  }
+  .category-Meal-Section h2 {
+    font-size: 40px;
+    color: #E22C14;
+    text-shadow: 3px 3px 3px #41090a;
+  }
+  .category-Meal-Section .meal-Card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-Card:hover {
+    background: #E22C14;
+    color: #FEF3EE;
+  }
+  .category-Meal-Section .mealImg {
+    height: 55%;
+  }
+  .latestMeal-Section {
+    background: #f14823;
+    color: #FEF3EE;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-Text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+  }
+  .category-Meal-Section {
+    width: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .category-Meal-Section .category-Meal-Section h2 {
+    font-size: 24px;
+  }
+  .category-Meal-Section .meal-Cards-Container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .category-Meal-Section .meal-card {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.685);
+    cursor: pointer;
+    text-align: center;
+    color: #41090a;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 3px #781816;
+  }
+  .category-Meal-Section .meal-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section {
+    padding: 40px;
+    width: auto;
+    background: #FDE4D7;
+  }
+  .meal-Description-Section .meal-Description {
+    padding: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .meal-Description-Section .meal-Description img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  .meal-Description-Section .meal-Description h1 {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+  }
+  .meal-Description-Section .meal-Description p {
+    margin: 0px;
+    padding: 24px 0 24px 0;
+    font-size: 18px;
+  }
+  .aside-Section {
+    width: 250px;
+    height: auto;
+    padding: 40px 40px 40px 40px;
+    background: #FEF3EE;
+    position: fixed;
+    top: 120px;
+    right: 0px;
+    border-radius: 16px;
+  }
+  .aside-Section .closeAsideButton {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    font-size: 24px;
+    color: #951917;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .aside-Section .login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside-Section .login-Title {
+    margin: 10px;
+  }
+  .aside-Section p {
+    margin: 10px;
+  }
+  .aside-Section input {
+    padding: 10px;
+    width: 200px;
+    margin: 8px;
+    border-radius: 8px;
+  }
 }/*# sourceMappingURL=main.css.map */

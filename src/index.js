@@ -28,7 +28,7 @@ async function getLatestMeal() {
             const mealText = document.createElement('p')
             mealText.classList.add('meal-Text')
             mealText.textContent = meal.strMeal
-            mealText.style.fontSize = '18px'
+            
 
             mealContainer.appendChild(newMealImg)
             mealContainer.appendChild(mealText)
