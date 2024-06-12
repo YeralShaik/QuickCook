@@ -15,14 +15,20 @@ body {
   width: auto;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 24px 80px 24px 80px;
+  padding: 24px 40px;
   font-size: 20px;
   border-bottom: solid 5px #f14823;
 }
-.navbar .logo-Navbar {
-  width: 10%;
+.navbar-container {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container .logo-Navbar {
+  width: 50px;
   height: auto;
   padding-left: 80px;
 }
@@ -35,6 +41,7 @@ body {
   gap: 16px;
   padding: 24px 80px 24px 80px;
   cursor: pointer;
+  margin-left: 60px;
 }
 .navbar .navbar-button button {
   padding: 12px;
@@ -60,7 +67,7 @@ body {
 }
 
 .main-Container {
-  width: auto;
+  width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,7 +709,7 @@ footer .img-Footer {
     border-bottom: solid 5px #f14823;
   }
   .navbar .logo-Navbar {
-    width: 20%;
+    width: 10%;
     height: auto;
     padding-left: 0px;
   }
